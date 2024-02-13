@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transform-style: preserve-3d;
+  transition: all 0.75s ease-out;
+  min-height: 85vh;
+  width: 25vw;
+  border-radius: 2.5vw;
+  padding: 0 3.5vw;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sneaker img {
+  width: 18vw;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+.circle {
+  height: 14vw;
+  width: 14vw;
+  background-image: linear-gradient(
+    to right,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 2.5vw;
+  transition: all 0.75s ease-out;
+  transform: translateZ(0);
+
+}
+.info h3 {
+  font-size: 1.3vw;
+  padding: 2vw 0;
+  color: #9e97df;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+  transform: translateZ(0);
+
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.75s ease-out;
+  transform: translateZ(0);
+}
+.sizes button {
+  padding: 0.5vw 1.8vw;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  color: #bc81c7;
+  font-weight: bold;
+}
+button.active {
+  background-color: #59f8f3;
+  color: #fff;
+}
+.purchase {
+  margin-top: 2vw;
+  transition: all 0.75s ease-out;
+  transform: translateZ(0);
+}
+.purchase button {
+  width: 100%;
+  padding: 1vw 0vw;
+  background: #59f8f3;
+  border-radius: 2.5vw;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
